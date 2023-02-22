@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-22T10:55:56.813Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" version="20.6.2" etag="R-vJ2qXDr0G9PSMWL1YQ" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-22T10:57:47.845Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" version="20.6.2" etag="Cv9GaIJmk7l6gvpLa-x0" type="github">
   <diagram id="h5lRwsrZSukIH4jquWbJ" name="第 1 页">
     <mxGraphModel dx="1426" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -66,6 +66,9 @@
             <mxPoint x="390" y="450" as="sourcePoint" />
             <mxPoint x="440" y="400" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="NJN_2Mgts7-q10ECVx2Z-24" value="用户注册&lt;br&gt;登录&lt;br&gt;获取自身信息&lt;br&gt;获取用户信息&lt;br&gt;搜索用户&lt;br&gt;添加好友&lt;br&gt;删除好友&lt;br&gt;查看好友列表&lt;br&gt;发送消息&lt;br&gt;获取好友消息&lt;br&gt;获取好友消息列表&lt;br&gt;发布动态消息&lt;br&gt;编辑动态消息&lt;br&gt;删除动态消息" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="710" width="350" height="480" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
