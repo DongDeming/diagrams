@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-03T09:17:08.252Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="jWeDNJmUaZYnaq6lZL-D" version="21.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-03T09:17:50.487Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="p8dVAflyV3ExTsV8Sva9" version="21.0.2" type="github">
   <diagram name="第 1 页" id="mjhyNosL_M_Hfxu1aokt">
     <mxGraphModel dx="2280" dy="3053" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="690" pageHeight="2000" math="0" shadow="0">
       <root>
@@ -164,6 +164,9 @@
         </mxCell>
         <mxCell id="Os1HGULcK5lBYgt0bCTE-21" value="10bytes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-305" y="-440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Os1HGULcK5lBYgt0bCTE-23" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 16px; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; color: rgb(34, 36, 42); text-align: start;&quot; class=&quot;p1&quot;&gt;Node以8 KB为界限来区分Buffer是大对象还是小对象： Buffer.poolSize = 8 * 1024; 这个8 KB的值也就是每个slab的大小值，在JavaScript层面，以它作为单位单元进行内存的分配。&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-640" y="-260" width="1300" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
