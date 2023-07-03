@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-07-03T09:10:46.824Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="cxnS9vgI64tZt2gNmOSl" version="21.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-03T09:17:08.252Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="jWeDNJmUaZYnaq6lZL-D" version="21.0.2" type="github">
   <diagram name="第 1 页" id="mjhyNosL_M_Hfxu1aokt">
-    <mxGraphModel dx="1644" dy="2632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="690" pageHeight="2000" math="0" shadow="0">
+    <mxGraphModel dx="2280" dy="3053" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="690" pageHeight="2000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -127,6 +127,43 @@
         </mxCell>
         <mxCell id="Os1HGULcK5lBYgt0bCTE-6" value="可以用代码判断系统的默认字节序，如用Uint8Array 来读取 Uint16Array的第一个字节的值是多少来判断" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-120" y="-1530" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Os1HGULcK5lBYgt0bCTE-8" value="allocPool" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="-330" width="910" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Os1HGULcK5lBYgt0bCTE-10" value="poolSize: 8KB 可调整" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="-330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Os1HGULcK5lBYgt0bCTE-11" value="poolSize: 8KB 可调整" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-490" y="-330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Os1HGULcK5lBYgt0bCTE-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Os1HGULcK5lBYgt0bCTE-12" target="Os1HGULcK5lBYgt0bCTE-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-550" y="-455" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Os1HGULcK5lBYgt0bCTE-12" value="Buffer.allocUnsafe" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="-550" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Os1HGULcK5lBYgt0bCTE-15" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 18px; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; text-align: start;&quot; class=&quot;p1&quot;&gt;影响速度的因素有两个：是否初始化，是否从allocPool中切割固定内存&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="-600" width="580" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Os1HGULcK5lBYgt0bCTE-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Os1HGULcK5lBYgt0bCTE-16" target="Os1HGULcK5lBYgt0bCTE-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-405" y="-440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Os1HGULcK5lBYgt0bCTE-16" value="&lt;p style=&quot;margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-kerning: auto; font-optical-sizing: auto; font-feature-settings: normal; font-variation-settings: normal; font-stretch: normal; font-size: 16px; line-height: normal; font-family: &amp;quot;Helvetica Neue&amp;quot;; color: rgb(34, 36, 42); text-align: start;&quot; class=&quot;p1&quot;&gt;allocUnsafeSlow&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-470" y="-550" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Os1HGULcK5lBYgt0bCTE-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Os1HGULcK5lBYgt0bCTE-19" target="Os1HGULcK5lBYgt0bCTE-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Os1HGULcK5lBYgt0bCTE-19" value="alloc(10)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="-550" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Os1HGULcK5lBYgt0bCTE-21" value="10bytes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-305" y="-440" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
